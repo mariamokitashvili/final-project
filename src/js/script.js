@@ -157,3 +157,18 @@ form.addEventListener("submit", function (e) {
 closeModal.addEventListener("click", () => {
   modal.style.display = "none";
 });
+
+//responsive nav
+const burger = document.querySelector(".burger");
+const nav = document.querySelector(".nav");
+
+burger.addEventListener("click", () => {
+  nav.classList.toggle("active");
+});
+const navLinks = document.querySelectorAll(".nav a");
+
+navLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    nav.classList.remove("active");
+  });
+});
