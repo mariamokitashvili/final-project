@@ -306,6 +306,48 @@
       </div>
     </section>
 
+    <!--form-->
+    <section id="contact">
+      <div class="contact-container">
+        <h2>Contact Us</h2>
+
+        <p class="contact-text">
+          დაინტერესების შემთხვევაში გამოგზავნეთ თქვენი მონაცემები და
+          დაგიკავშირდებით
+        </p>
+      </div>
+      <form id="contact-form">
+        <div class="form-row">
+          <input type="text" id="name" placeholder="Your Name" required />
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter Your Email"
+            required
+          />
+          <input type="text" id="website" placeholder="Enter Your Website" />
+        </div>
+
+        <textarea
+          id="message"
+          placeholder="Enter Your Message"
+          required
+        ></textarea>
+
+        <button type="submit" class="contact-btn">Contact Me</button>
+      </form>
+
+      <!-- MODAL -->
+      <div class="modal" id="successModal">
+        <div class="modal-content">
+          <p>
+            Thank you for getting in touch! We appreciate you contacting us.
+          </p>
+          <button id="closeModal">Close</button>
+        </div>
+      </div>
+    </section>
+
     <script src="src/js/script.js"></script>
   </body>
 </html>

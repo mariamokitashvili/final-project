@@ -500,3 +500,89 @@ body {
   font-weight: bold;
   display: inline-block;
 }
+
+/* Contact form */
+.contact-container {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#contact-form {
+  margin-top: 40px;
+}
+
+.form-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.form-row input {
+  width: 240px;
+  padding: 15px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+}
+
+textarea {
+  width: calc(240px * 3 + 40px);
+  padding: 15px;
+  height: 120px;
+  border-radius: 8px;
+  border: none;
+  resize: none;
+  font-size: 16px;
+  display: block;
+  margin: 0 auto 25px auto;
+}
+
+/* Button */
+.contact-btn {
+  padding: 10px 25px;
+  background: #ff7a00;
+  color: white;
+  font-size: 18px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  display: block;
+  margin: 20px auto;
+  margin-bottom: 180px;
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.modal-content {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  width: 350px;
+  font-size: 17px;
+  color: #333;
+}
+
+.modal-content button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #ff7b00;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 6px;
+}
