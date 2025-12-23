@@ -36,3 +36,26 @@ document.addEventListener("DOMContentLoaded", () => {
   const aboutSection = document.querySelector("#about");
   if (aboutSection) observer.observe(aboutSection);
 });
+
+//MY PROJECTS (FILTER)
+const filterBtns = document.querySelectorAll(".filter-btn");
+const cards = document.querySelectorAll(".project-card");
+
+filterBtns.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    document.querySelector(".filter-btn.active").classList.remove("active");
+    btn.classList.add("active");
+
+    const filter = btn.dataset.filter;
+
+    cards.forEach((card) => {
+      const category = card.dataset.category;
+
+      if (filter === "all" || filter === category) {
+        card.style.display = "block";
+      } else {
+        card.style.display = "none";
+      }
+    });
+  });
+});
